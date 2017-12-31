@@ -1,0 +1,64 @@
+* {
+    position:relative;
+}
+
+body {
+    width:100%;
+    height:100%;
+}
+
+#content {
+    width:98%;
+    height:98%;
+    display:grid;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width:50vh;
+    height:90vh;
+}
+
+.header {  
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header > p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    width:100%;
+    height:85%;
+}
+
+#buttonDiv {
+    width:95%;
+    height: 5%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttons {
+    width: 32%;
+    display: inline-block;
+    height:auto;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
