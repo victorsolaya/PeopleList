@@ -1,4 +1,13 @@
-document.querySelector('#main').addEventListener('click',
-function() {
-    console.log(`Ey! I've been clicked`);
-})
+firebase
+  .database()
+  .ref("children")
+  .once("value")
+    .then(function (snapshot) {
+        var list = document.querySelector("#childList");
+        snapshot.val().forEach(element => {
+            var listElement = document.createElement('li');
+            listElement.id = `${ element.id }`;
+            listElement.textContent = `${element.name} ${element.surname}`;
+            list.appendChild(listElement);
+        });
+  });

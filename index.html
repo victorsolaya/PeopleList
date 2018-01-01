@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div id="content">
+    <div id="container">
         <div id="main">
             <div class="header">
                 <p>LISTA DE PERSONAS</p>
             </div>
-            <div class="list"></div>
+            <div class="list">
+                <ul id="childList">
+
+                </ul>
+            </div>
             <div id="buttonDiv">
                 <div class="buttons">
                     <button class="add">Add</button>
@@ -27,6 +31,19 @@
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA4rxyXiiiGbyJYpEswBagDgGL-n51I3BI",
+            authDomain: "peoplelistschool.firebaseapp.com",
+            databaseURL: "https://peoplelistschool.firebaseio.com",
+            projectId: "peoplelistschool",
+            storageBucket: "",
+            messagingSenderId: "978099254184"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script src="./main.js"></script>
 </body>
 </html>
